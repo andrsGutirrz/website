@@ -1,0 +1,323 @@
+---
+// Component script (if needed)
+---
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andres Gutierrez (a.k.a Guti) - Backend Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #e4e6ea;
+            background: #1a1a1a;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #242529;
+            padding: 1rem 0;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #333;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Profile Section */
+        .profile {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            background: #333;
+            overflow: hidden;
+            border: 3px solid #333;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: #e4e6ea;
+        }
+
+        .profile p {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+        }
+
+        /* Sections */
+        .section {
+            margin: 3rem 0;
+            padding: 2rem 0;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: #e4e6ea;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .skill {
+            background: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #e4e6ea;
+        }
+
+        /* Projects */
+        .project {
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+            border-left: 4px solid #007acc;
+        }
+
+        .project h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #e4e6ea;
+        }
+
+        .project p {
+            color: #b0b0b0;
+            margin: 0;
+        }
+
+        /* Contact */
+        .contact-links {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .contact-links a {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-in {
+            padding: 1rem;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+            color: #40a9ff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Guti</div>
+            <div class="nav-links">
+                <a href="#blog">Blog</a>
+                <a href="#resume">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Profile Section -->
+       <section class="profile">
+            <div class="profile-image">
+                <img src="/imgs/me.png" alt="Photo of me" />
+            </div>
+            <h1>Andrés Gutiérrez - aka: Guti</h1>
+            <p>🚀 Backend Engineering Specialist</p>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section">
+            <h2>Professional Experience</h2>
+            <p>
+              I craft robust microservices with Python while navigating the clouds with confidence!
+              As a Backend Engineer, I specialize in building scalable systems that power modern applications.
+            </p>
+            <p>
+              My expertise spans multiple programming languages including Python, Java, Go, and C#, 
+              with a strong focus on microservices architecture and API design. 
+              I thrive in cloud environments and enjoy solving complex distributed systems challenges.
+            </p>
+        </section>
+
+        <!-- About Me -->
+        <section class="section">
+            <h2>About Me</h2>
+            <p>
+              I'm passionate about backend engineering and cloud technologies. 
+              Currently, I'm deepening my Azure knowledge while exploring the exciting world of AI and mastering Kubernetes orchestration.
+            </p>
+            <p>
+              My journey in software development has led me through various cloud platforms 
+              ncluding GCP, AWS, and Azure, giving me a comprehensive understanding of cloud-native solutions
+              and modern infrastructure patterns.
+            </p>
+        </section>
+
+        <!-- What I Do -->
+        <section class="section">
+            <h2>What I Do</h2>
+            <p>
+              I specialize in microservices architecture and API design, building scalable backend systems
+              that power modern applications. My expertise spans across multiple cloud platforms and programming languages.
+            </p>
+            
+            <div class="skills">
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">Go</span>
+                <span class="skill">C#</span>
+                <span class="skill">Microservices</span>
+                <span class="skill">API Design</span>
+                <span class="skill">GCP</span>
+                <span class="skill">AWS</span>
+                <span class="skill">Azure</span>
+                <span class="skill">Kubernetes</span>
+                <span class="skill">Generative AI</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section">
+            <h2>Current Project</h2>
+            
+            <div class="project">
+              <div class="project-in">
+                <h3>🚀 Custom Dev Portal with Kong Gateway</h3>
+                <p>
+                  Currently developing a comprehensive developer portal leveraging Kong Gateway for API management.
+                  The project features a modern architecture with Dotnet 8 backend, Vue.js frontend, MongoDB database,
+                  and Azure cloud infrastructure.
+                </p>
+              </div>
+            </div>
+            
+            <div class="project">
+              <div class="project-in">
+                <h3>☁️ Cloud & Infrastructure Knowledge Expansion</h3>
+                <p>
+                  Actively deepening my expertise in cloud services, exploring advanced features 
+                  and best practices for enterprise-grade solutions.
+                </p>
+              </div>
+            </div>
+            
+            <div class="project">
+              <div class="project-in">
+                <h3>🤖 AI Exploration Journey</h3>
+                <p>
+                  Diving into the fascinating world of Artificial Intelligence, 
+                  learning about generative AI models and their applications in backend systems.
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <h2>Connect With Me</h2>
+            <p>Let's connect and discuss backend engineering, cloud architecture, or any exciting tech opportunities!</p>
+            
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/andres-gutierrez-arcia">LinkedIn</a>
+                <a href="mailto:andresga.dev@gmail.com">Email</a>
+                <a href="https://github.com/andrsgutirrz">GitHub</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
